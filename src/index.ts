@@ -1,7 +1,9 @@
-import add from './functions';
+import {Spider} from './spiderBase';
 
 const main = async () => {
-  console.log(add(1, 9));
+  const spiper = new Spider();
+  spiper.run();
 };
+
 
 main();

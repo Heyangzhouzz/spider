@@ -4,23 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp",
-    "debugger": "tsc && node --inspect-brk dist/program.js"
+    "dev": "tsc",
+    "serve": "gulp watch",
+    "debugger": "tsc && node --inspect-brk dist/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^12.12.17",
+    "axios": "^0.26.0",
+    "form-data": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "typescript": "^3.7.3"
+    "p-limit": "^4.0.0",
+    "p-queue": "^6.6.2",
+    "typescript": "^4.6.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.11.0",
-    "@typescript-eslint/parser": "^2.11.0",
-    "eslint": "^6.7.2",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.19.1",
+    "@types/axios": "^0.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.8.0",
     "gulp-cli": "^2.3.0",
     "gulp-nodemon": "^2.5.0"
   }
